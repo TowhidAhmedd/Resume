@@ -4,77 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Towhid Ahmed - Resume</title>
+
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
-        h1, h2, h3 { margin-bottom: 5px; }
-        hr { margin: 20px 0; }
-        .icons img { width: 30px; margin-right: 10px; vertical-align: middle; }
-        .icons a { text-decoration: none; }
-        ul { margin-top: 5px; }
-        li { margin-bottom: 5px; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            background: #fff;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .links a {
+            display: block;
+            margin-bottom: 5px;
+            color: #0073e6;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .projects p, .education p {
+            margin: 5px 0;
+        }
+
+        .skills-list {
+            columns: 2;
+            column-gap: 40px;
+        }
+
+        @media(max-width: 600px){
+            .skills-list {
+                columns: 1;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-<h1>Towhid Ahmed</h1>
-<p>Software Engineer | Java | AI Enthusiast</p>
+<div class="container">
 
-<hr>
+    <div class="header">
+        <h1>Towhid Ahmed</h1>
+        <p class="contact">
+            <a href="mailto:towhid4635@gmail.com">towhid4635@gmail.com</a> |
+            <a href="tel:+8801871834635">+8801871834635</a>
+        </p>
+    </div>
 
-<h2>Social Profiles</h2>
-<div class="icons">
-    <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
-    </a>
-    <a href="https://github.com/your-github" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
-    </a>
-    <a href="https://leetcode.com/your-leetcode" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" style="width:35px;">
-    </a>
-    <a href="https://www.geeksforgeeks.org/profile/your-gfg" target="_blank">
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/2021/02/gfg_200X200.png" style="width:35px;">
-    </a>
+    <!-- Summary -->
+    <div class="section">
+        <div class="section-title">Summary</div>
+        <p>
+            Highly motivated Software Engineer with strong problem-solving skills, having solved 500+ coding
+            problems across LeetCode and GeeksforGeeks. Proficient in Data Structures & Algorithms,
+            Core Java, and Low-Level Design principles. Experienced in building Machine Learning 
+            and Deep Learning models, including real-world applications in classification, prediction, 
+            and recommendation systems.
+        </p>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+
+        <div class="skills-list">
+            <ul>
+                <li><b>Programming:</b> Java, Python</li>
+                <li><b>Databases & API:</b> MySQL, FastAPI</li>
+                <li><b>Tools:</b> Git, GitHub</li>
+                <li><b>Concepts:</b> OOP, LLD (SOLID, Singleton, Factory, Strategy, Observer, Decorator, Adapter)</li>
+            </ul>
+
+            <ul>
+                <li><b>ML/DL:</b> CNN, ANN, RNN</li>
+                <li><b>Frameworks:</b> TensorFlow, Keras, Scikit-learn</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+        <div class="section-title">Projects</div>
+
+        <div class="projects">
+            <p><b>Customer Churn Prediction (DL)</b><br>
+            • Built an ANN model to predict customer churn with high accuracy.<br>
+            • Performed data cleaning, feature engineering, and hyperparameter tuning.</p>
+
+            <p><b>Face Mask Detection (CNN)</b><br>
+            • Designed and trained a CNN to classify masked vs unmasked faces.<br>
+            • Achieved strong accuracy using augmentation and custom model architecture.</p>
+
+            <p><b>Breast Cancer Classification</b><br>
+            • Implemented ML/DL models for binary classification.<br>
+            • Compared SVM, Random Forest, and Neural Networks.</p>
+
+            <p><b>Movie Recommendation System</b><br>
+            • Built recommendation system using collaborative filtering + content-based filtering.</p>
+
+            <p><b>Email/SMS Spam Detection</b><br>
+            • Trained multiple models (Naive Bayes, Logistic Regression, SVM).<br>
+            • Achieved high precision/recall on real-world message datasets.</p>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="education">
+            <p><b>Bachelor of Business Administration (Honours) – Management</b><br>
+               NagirHat College, Chittagong Bangladesh<br>
+               2nd Year (Ongoing), Expected Graduation: 2028
+            </p>
+            <p><b>Academic Focus:</b> Data Structures & Algorithms, Dynamic Programming, Greedy Algorithms, CNN.</p>
+        </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="section">
+        <div class="section-title">Achievements</div>
+        <ul>
+            <li>Solved 500+ DSA problems (LeetCode + GFG)</li>
+            <li>Built top ML/DL projects including CNN and ANN models</li>
+            <li>Self-taught technical skills while pursuing a non-CS degree</li>
+        </ul>
+    </div>
+
+    <!-- Links -->
+    <div class="section">
+        <div class="section-title">Important Links</div>
+        <div class="links">
+            <a href="https://leetcode.com/u/Tanriv/" target="_blank">LeetCode Profile</a>
+            <a href="https://www.geeksforgeeks.org/profile/towhid33sx?tab=activity" target="_blank">GFG Profile</a>
+            <a href="https://www.linkedin.com/in/towhid-ahmed-5ba096354/" target="_blank">LinkedIn</a>
+
+            <a href="https://github.com/TowhidAhmedd" target="_blank">GitHub</a>
+
+            <br><b>Project Links:</b><br>
+
+            <a href="https://github.com/TowhidAhmedd/Customer-Churn-Prediction-using-ANN-" target="_blank">Customer Churn Prediction</a>
+            <a href="https://github.com/TowhidAhmedd/Face-Mask-Detection-using-Convolutional-Neural-Network" target="_blank">Face Mask Detection</a>
+            <a href="https://github.com/TowhidAhmedd/Breast-Cancer-Classification-with-Neural-Network" target="_blank">Breast Cancer Classification</a>
+            <a href="https://github.com/TowhidAhmedd/Movie-Recommend-System" target="_blank">Movie Recommendation System</a>
+            <a href="https://github.com/TowhidAhmedd/SMS_Spam_Classifier-" target="_blank">SMS Spam Detection</a>
+        </div>
+    </div>
+
 </div>
-
-<hr>
-
-<h2>Education</h2>
-<p><strong>Bachelor of Business Administration (BBA)</strong>, 2nd Year</p>
-<p>University Name (Add your University)</p>
-
-<hr>
-
-<h2>Skills</h2>
-<ul>
-    <li>Programming Languages: Java, Python</li>
-    <li>Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA)</li>
-    <li>Machine Learning & Deep Learning</li>
-    <li>Web Development: HTML, CSS, JavaScript (optional)</li>
-</ul>
-
-<hr>
-
-<h2>Projects</h2>
-<ul>
-    <li><strong>Movie Recommender System:</strong> Built a recommendation system using Python, Pandas, and collaborative filtering to suggest movies to users based on their preferences.</li>
-    <li><strong>MS Spam Classifier:</strong> Developed a spam message classifier using Machine Learning techniques (Naive Bayes & SVM) achieving high accuracy in classification.</li>
-    <li><strong>Face Mask Detection (Optional):</strong> CNN model to detect face masks in real-time images and video streams.</li>
-</ul>
-
-<hr>
-
-<h2>Achievements & Competitions</h2>
-<ul>
-    <li>Participated in Codeforces contests (mention rating if applicable)</li>
-    <li>Completed Striver 455 DSA Sheet (covering Arrays, Strings, Linked Lists, Trees, Graphs, DP, Greedy)</li>
-</ul>
-
-<hr>
-
-<h2>Contact</h2>
-<p>Email: your-email@example.com</p>
-<p>Phone: +880XXXXXXXXXX</p>
 
 </body>
 </html>
